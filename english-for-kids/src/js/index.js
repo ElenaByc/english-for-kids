@@ -1,5 +1,6 @@
 import "../styles/normalize.css";
 import "../styles/main.scss";
+import styles from "../styles/main.scss";
 import happy from "../assets/images/happy.jpg";
 
 const APP_CONTAINER = document.getElementById("app-container");
@@ -16,7 +17,8 @@ happyChildrenImg.src = happy;
 DOC_FRAGMENT.appendChild(happyChildrenImg);
 
 const btn = document.createElement("button");
-btn.classList.add("btn");
+// btn.classList.add("btn");
+btn.classList.add(styles.btn);
 btn.innerHTML = "Start";
 DOC_FRAGMENT.appendChild(btn);
 
