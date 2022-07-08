@@ -1,12 +1,12 @@
 {
-    "homepage": "https://rolling-scopes-school.github.io/elenabyc-JSFEEN2022/english-for-kids/",
+    "homepage": "https://rolling-scopes-school.github.io/elenabyc-JSFEEN2022/",
     "name": "english-for-kids",
     "version": "1.0.0",
     "description": "learning about webpack",
     "main": "index.js",
     "scripts": {
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist",
+        "deploy": "gh-pages -d dist -e english-for-kids",
         "build": "webpack",
         "dev": "webpack serve",
         "lint": "eslint src"
