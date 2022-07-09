@@ -1,9 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const isDevelopment = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   entry: {
     bundle: path.resolve(__dirname, 'src/js/index.js'),
   },
@@ -27,17 +30,22 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+        ],
       },
       {
         test: /\.module\.scss$/,
         use: [
-          'style-loader',
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
               modules: {
-                localIdentName: '[name]__[local]--[hash:base64:5]',
+                localIdentName: isDevelopment
+                  ? '[name]__[local]--[hash:base64:5]'
+                  : '[hash:base64]',
               },
             },
           },
@@ -47,7 +55,11 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /\.module\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -75,6 +87,7 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html',
     }),
+    new MiniCssExtractPlugin(),
   ],
   resolve: {
     alias: {
@@ -82,5 +95,9 @@ module.exports = {
       Images: path.resolve(__dirname, 'src/assets/images/'),
     },
     extensions: ['.js', '.scss'],
+  },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
 };

@@ -7,8 +7,8 @@
     "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist -e english-for-kids",
-        "build": "webpack",
-        "dev": "webpack serve",
+        "build": "webpack --node-env=production",
+        "dev": "webpack serve --node-env=development",
         "lint": "eslint src"
     },
     "keywords": [],
@@ -28,6 +28,7 @@
         "eslint-webpack-plugin": "^3.2.0",
         "gh-pages": "^4.0.0",
         "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.6.1",
         "prettier": "^2.7.1",
         "sass": "^1.53.0",
         "sass-loader": "^13.0.0",
