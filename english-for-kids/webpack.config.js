@@ -77,6 +77,10 @@ module.exports = {
     }),
   ],
   resolve: {
+    alias: {
+      Styles: path.resolve(__dirname, 'src/styles/'),
+      Images: path.resolve(__dirname, 'src/assets/images/'),
+    },
     extensions: ['.js', '.scss'],
   },
 };

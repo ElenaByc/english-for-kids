@@ -1,16 +1,16 @@
 import 'normalize.css';
-import '../styles/main.scss';
-import styles from '../styles/app.module.scss';
-import happy from '../assets/images/happy.jpg';
+import 'Styles/main';
+import styles from 'Styles/app.module';
+import happy from 'Images/happy.jpg';
 
 const APP_CONTAINER = document.getElementById('app-container');
 const DOC_FRAGMENT = document.createDocumentFragment();
 
-// console.log(APP_CONTAINER);
-
 const title = document.createElement('h1');
 title.innerHTML = 'English for Kids';
 DOC_FRAGMENT.appendChild(title);
+
+console.log(APP_CONTAINER);
 
 const happyChildrenImg = document.createElement('img');
 happyChildrenImg.src = happy;
