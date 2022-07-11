@@ -13,15 +13,30 @@ body {
   background: url('../assets/images/wave-top.png'),
     url('../assets/images/wave-bottom.png'),
     linear-gradient(
-      $primary-color,
+      $blue-color,
       $white-color 28vw,
       $white-color calc(100% - 28vw),
-      $primary-color
+      $blue-color
     );
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-out;
+
+  &.play {
+    background: url('../assets/images/wave-top.png'),
+      url('../assets/images/wave-bottom.png'),
+      linear-gradient(
+        $green-color,
+        $white-color 28vw,
+        $white-color calc(100% - 28vw),
+        $green-color
+      );
+    background-size: 100% auto, 100% auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center bottom;
+  }
 }
 
 #app-container {
@@ -43,8 +58,8 @@ h1 {
 }
 
 img {
-  width: 300px;
+  width: 30%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
