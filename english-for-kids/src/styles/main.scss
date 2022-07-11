@@ -10,26 +10,25 @@
 }
 
 body {
-  background-color: $primary-color;
+  background: url('../assets/images/wave-top.png'),
+    url('../assets/images/wave-bottom.png'),
+    linear-gradient(
+      $primary-color,
+      $white-color 28vw,
+      $white-color calc(100% - 28vw),
+      $primary-color
+    );
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 20px;
 }
 
 #app-container {
-  // body div {
-  background-color: $secondary-color;
-  border-radius: 10px;
-  box-shadow: $box-shadow;
-  padding: 50px 20px;
-  max-width: 100%;
-  width: 800px;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   row-gap: 30px;

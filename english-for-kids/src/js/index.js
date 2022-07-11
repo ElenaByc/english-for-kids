@@ -1,13 +1,19 @@
 import 'normalize.css';
 import 'Styles/main';
 import styles from 'Styles/app.module';
+
 import happy from 'Images/happy.jpg';
 
 import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 
+import createHeader from './header';
+
 const APP_CONTAINER = document.getElementById('app-container');
 const DOC_FRAGMENT = document.createDocumentFragment();
+
+const header = createHeader();
+DOC_FRAGMENT.appendChild(header);
 
 const title = document.createElement('h1');
 title.innerHTML = 'English for Kids';
