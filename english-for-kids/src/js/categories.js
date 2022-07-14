@@ -3,6 +3,9 @@ import actions from 'Images/actions.jpg';
 import fruits from 'Images/fruits.jpg';
 import animals from 'Images/animals.jpg';
 import emotions from 'Images/emotions.jpg';
+import clothes from 'Images/clothes.jpg';
+import numbers from 'Images/numbers.jpg';
+import weather from 'Images/weather.jpg';
 
 const CATEGORIES = [
   {
@@ -33,17 +36,17 @@ const CATEGORIES = [
   {
     id: 6,
     name: 'Clothes',
-    image: 'clothes.jpg',
+    image: clothes,
   },
   {
     id: 7,
-    name: 'Category 7',
-    image: 'animals.jpg',
+    name: 'Numbers',
+    image: numbers,
   },
   {
     id: 8,
-    name: 'Category 8',
-    image: 'emotions.jpg',
+    name: 'Weather',
+    image: weather,
   },
 ];
 
