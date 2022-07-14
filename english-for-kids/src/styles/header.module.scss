@@ -2,13 +2,33 @@
 
 .header {
   width: 100%;
-  padding: 3% 7%;
+  padding: 1% 7%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
+.app-title {
+  text-shadow: -1px -1px 0 $light-color, 1px -1px 0 $light-color,
+    -1px 1px 0 $light-color, 1px 1px 0 $light-color;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 4px;
+  & span:nth-child(1) {
+    color: $blue-color;
+  }
+  & span:nth-child(2) {
+    color: $magenta-color;
+  }
+  & span:nth-child(3) {
+    color: $green-color;
+  }
+}
+
 .burger {
+  flex: 0 0 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -33,6 +53,7 @@
 }
 
 .switcher {
+  flex: 0 0 150px;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -96,5 +117,26 @@
     border-radius: 7px;
     box-shadow: $box-shadow;
     transition: all 0.3s ease-out;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    padding: 3% 5%;
+  }
+
+  .app-title {
+    width: 100%;
+    order: 3;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    padding: 4%;
+
+    .app-title {
+      font-size: 2em;
+    }
   }
 }
