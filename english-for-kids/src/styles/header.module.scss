@@ -36,7 +36,8 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in;
+  z-index: 3;
 
   & .line {
     width: 100%;
@@ -49,6 +50,20 @@
   &:hover .line {
     background-color: $white-color;
     height: 4px;
+  }
+
+  &.open {
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .line:nth-child(1) {
+      transform: translate(0, 11px) rotate(45deg);
+    }
+
+    .line:nth-child(3) {
+      transform: translate(0, -11px) rotate(-45deg);
+    }
   }
 }
 

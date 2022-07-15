@@ -1,6 +1,7 @@
 import styles from 'Styles/header.module';
 
 import { createElement, addNewElement } from './elements-utils';
+import toggleSideBar from './events-utils';
 
 function createrSwitcher() {
   const switcher = createElement('label', styles.switcher);
@@ -38,6 +39,7 @@ function createBurgerBtn() {
   for (let i = 0; i < 3; i += 1) {
     addNewElement(burgerBtn, 'span', styles.line);
   }
+  burgerBtn.addEventListener('click', toggleSideBar);
   return burgerBtn;
 }
 

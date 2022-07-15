@@ -15,7 +15,7 @@ const CATEGORIES = [
   },
   {
     id: 2,
-    name: 'Actions',
+    name: 'Activities',
     image: actions,
   },
   {
