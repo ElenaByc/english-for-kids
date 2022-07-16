@@ -21,7 +21,7 @@ body {
     );
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
+  background-position: center 80px, center bottom;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   transition: all 0.3s ease-out;
@@ -37,7 +37,7 @@ body {
       );
     background-size: 100% auto, 100% auto;
     background-repeat: no-repeat, no-repeat;
-    background-position: center top, center bottom;
+    background-position: center 80px, center bottom;
   }
 
   &.scrollblock {
@@ -49,7 +49,7 @@ body {
   max-width: 1440px;
   width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 80px auto 0;
 
   h1,
   h2 {
@@ -63,7 +63,7 @@ body {
     margin-bottom: 1rem;
   }
 
-  .shadow {
+  .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -102,6 +102,10 @@ body {
 @media (max-width: $breakpoint-tablet) {
   body {
     font-size: 14px;
+
+    #app-container {
+      margin-top: 110px;
+    }
   }
 }
 

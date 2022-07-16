@@ -5,18 +5,18 @@ import 'Styles/global';
 // import { icon } from '@fortawesome/fontawesome-svg-core';
 
 import { createElement } from './elements-utils';
-import toggleSideBar from './events-utils';
 import createHeader from './header';
-import createSideBarMenu from './sidebar';
+
 import createMainSection from './mainPage';
 
 const APP_CONTAINER = document.getElementById('app-container');
 const DOC_FRAGMENT = document.createDocumentFragment();
 
 DOC_FRAGMENT.appendChild(createHeader());
-DOC_FRAGMENT.appendChild(createSideBarMenu());
 const main = createElement('main', 'main');
 main.append(createMainSection());
+DOC_FRAGMENT.appendChild(main);
+APP_CONTAINER.appendChild(DOC_FRAGMENT);
 
 // const happyChildrenImg = document.createElement('img');
 // happyChildrenImg.src = happy;
@@ -32,9 +32,3 @@ main.append(createMainSection());
 //   }).html
 // }&nbsp;&nbsp;&nbsp;Start`;
 // main.appendChild(btn);
-
-DOC_FRAGMENT.append(main);
-const shadow = createElement('div', 'shadow');
-shadow.addEventListener('click', toggleSideBar);
-DOC_FRAGMENT.appendChild(shadow);
-APP_CONTAINER.appendChild(DOC_FRAGMENT);
