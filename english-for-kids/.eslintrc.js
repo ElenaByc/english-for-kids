@@ -22,5 +22,6 @@ module.exports = {
   },
   rules: {
     'import/extensions': ['error', { '.js': 'never', '.scss': 'never' }],
+    'prefer-destructuring': ['error', { object: true, array: false }],
   },
 };

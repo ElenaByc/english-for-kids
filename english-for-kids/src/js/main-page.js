@@ -4,6 +4,8 @@ import {
   addNewImageElement,
   addNewElement,
 } from './elements-utils';
+import { setActiveItem } from './events-utils';
+import createCategorySection from './category-page';
 import CATEGORIES from './categories';
 
 function createCategoryCard(id, name, image) {
@@ -11,6 +13,8 @@ function createCategoryCard(id, name, image) {
   card.setAttribute('id', `category${id}`);
   addNewImageElement(card, 'div', styles['card-img'], image);
   addNewElement(card, 'h3', styles['card-title'], name);
+  card.addEventListener('click', setActiveItem);
+  card.addEventListener('click', createCategorySection);
   return card;
 }
 

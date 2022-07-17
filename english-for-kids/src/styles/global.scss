@@ -83,11 +83,13 @@ body {
 }
 
 .main {
-  & .section {
+  .section {
     padding: 10px 7%;
 
-    & h2 {
+    h2 {
       color: $magenta-color;
+      text-shadow: -1px -1px 0 $light-color, 1px -1px 0 $light-color,
+        -1px 1px 0 $light-color, 1px 1px 0 $light-color;
     }
 
     .card {
@@ -97,6 +99,10 @@ body {
       }
     }
   }
+}
+
+.hide {
+  display: none;
 }
 
 @media (max-width: $breakpoint-tablet) {

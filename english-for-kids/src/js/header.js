@@ -1,10 +1,10 @@
 import styles from 'Styles/header.module';
 
 import { createElement, addNewElement } from './elements-utils';
-import toggleSidebar from './events-utils';
+import { toggleSidebar } from './events-utils';
 import createSidebarMenu from './sidebar';
 
-function createrSwitcher() {
+function createrSwitcher(appState) {
   const switcher = createElement('label', styles.switcher);
   const input = createElement('input', styles.input);
   input.setAttribute('type', 'checkbox');
@@ -14,6 +14,7 @@ function createrSwitcher() {
     document.body.classList.toggle('play');
     Array.from(cards).forEach((card) => card.classList.toggle('play'));
     header.classList.toggle(styles.play);
+    appState.togglePlay();
   });
   switcher.append(input);
   addNewElement(switcher, 'span', [styles.label, styles.train], 'Train');
@@ -45,14 +46,14 @@ function createOverlay() {
   return overlay;
 }
 
-export default function createHeader() {
+export default function createHeader(appState) {
   const header = createElement('header', styles.header);
   const container = createElement('div', styles.container);
   container.appendChild(createSidebarMenu());
   container.appendChild(createOverlay());
   container.appendChild(createBurgerBtn());
   container.appendChild(createTitle());
-  container.appendChild(createrSwitcher());
+  container.appendChild(createrSwitcher(appState));
   header.appendChild(container);
   return header;
 }

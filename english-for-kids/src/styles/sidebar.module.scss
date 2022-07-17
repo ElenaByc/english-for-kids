@@ -31,6 +31,12 @@
         color: $light-color;
         cursor: pointer;
 
+        &.active {
+          color: $green-color;
+          text-shadow: -1px -1px 0 $light-color, 1px -1px 0 $light-color,
+            -1px 1px 0 $light-color, 1px 1px 0 $light-color;
+        }
+
         &:hover {
           font-size: 2.2rem;
         }
