@@ -15,6 +15,7 @@ module.exports = {
         map: [
           ['Styles', './src/styles'],
           ['Images', './src/assets/images/'],
+          ['Audio', './src/assets/audio/'],
         ],
         extensions: ['.js', '.scss'],
       },

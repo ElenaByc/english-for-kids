@@ -1,7 +1,7 @@
 @import './variables';
 
 .category {
-  & .card-container {
+  .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
 
-    & .card {
+    .card {
       padding: 10px;
       width: 200px;
       height: 250px;
@@ -24,7 +24,7 @@
       justify-content: space-between;
       margin-bottom: 30px;
 
-      & .card-img {
+      .card-img {
         width: 180px;
         height: 180px;
         background-position: center top;
@@ -32,7 +32,22 @@
         border-radius: 9px;
       }
 
-      & .card-title {
+      .card-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .icon {
+        &:hover {
+          filter: invert(20%) sepia(63%) saturate(4798%) hue-rotate(301deg)
+            brightness(75%) contrast(94%);
+        }
+      }
+
+      .card-title {
         font-weight: bold;
         font-size: 24px;
         line-height: 36px;
