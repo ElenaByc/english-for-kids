@@ -12,6 +12,7 @@
     $light-blue-color
   );
   width: 100%;
+  z-index: 1;
   .container {
     max-width: 1440px;
     width: 100%;
@@ -61,7 +62,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  z-index: 300;
+  z-index: 4;
 
   & .line {
     width: 100%;

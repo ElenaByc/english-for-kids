@@ -23,17 +23,24 @@ function playAudio(event) {
   sound.play();
 }
 
-function rotateCard() {
-  console.log('Rotate!');
+function flipCard(event) {
+  const clickedCard = event.target.closest('.card');
+  clickedCard.classList.add(styles.flip);
 }
 
-function createWordCard(word, image, isPlayMode) {
+function flipCardBack(event) {
+  const card = event.target.closest('.card');
+  card.classList.remove(styles.flip);
+}
+
+function createWordCard(word, translation, image, isPlayMode) {
   const card = createElement('div', ['card', styles.card]);
   if (isPlayMode) {
     card.classList.add('play');
   }
   card.setAttribute('id', word);
-  addNewImageElement(card, 'div', styles['card-img'], image);
+  const frontFace = createElement('div', styles['front-face']);
+  addNewImageElement(frontFace, 'div', styles['card-img'], image);
   const div = createElement('div', styles['train-container']);
   const audio = createElement('div', styles.icon);
   audio.innerHTML = `${
@@ -56,9 +63,14 @@ function createWordCard(word, image, isPlayMode) {
       },
     }).html
   }`;
-  rotate.addEventListener('click', rotateCard);
+  rotate.addEventListener('click', flipCard);
   div.appendChild(rotate);
-  card.appendChild(div);
+  frontFace.appendChild(div);
+  card.appendChild(frontFace);
+  const backFace = createElement('div', styles['back-face']);
+  addNewElement(backFace, 'h3', styles['card-title'], translation);
+  card.appendChild(backFace);
+  card.addEventListener('mouseout', flipCardBack);
   return card;
 }
 
@@ -90,7 +102,9 @@ export default function createCategorySection(event) {
   const isPlayMode = document.getElementsByClassName(headerStyles.input)[0]
     .checked;
   CARDS.filter((el) => el.categoryId === categoryId).forEach((el) =>
-    container.appendChild(createWordCard(el.word, el.image, isPlayMode)),
+    container.appendChild(
+      createWordCard(el.word, el.translation, el.image, isPlayMode),
+    ),
   );
   categorySection.appendChild(container);
   const main = document.getElementsByClassName('main')[0];

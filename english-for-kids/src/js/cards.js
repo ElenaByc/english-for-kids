@@ -12,6 +12,13 @@ import swimAudio from 'Audio/swim.mp3';
 const cards = [
   {
     categoryId: 2,
+    word: 'run',
+    translation: 'бегать',
+    image: run,
+    audio: runAudio,
+  },
+  {
+    categoryId: 2,
     word: 'draw',
     translation: 'рисовать',
     image: draw,
@@ -23,13 +30,6 @@ const cards = [
     translation: 'играть',
     image: play,
     audio: playAudio,
-  },
-  {
-    categoryId: 2,
-    word: 'run',
-    translation: 'бегать',
-    image: run,
-    audio: runAudio,
   },
   {
     categoryId: 2,
