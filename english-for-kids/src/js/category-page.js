@@ -1,4 +1,5 @@
 import styles from 'Styles/category-page.module';
+import headerStyles from 'Styles/header.module';
 import mainStyles from 'Styles/main-page.module';
 
 import {
@@ -12,28 +13,34 @@ import {
   addNewImageElement,
   addNewElement,
 } from './elements-utils';
+
 import CARDS from './cards';
 import CATEGORIES from './categories';
 
-function playAudio() {
-  console.log('Audio!');
+function playAudio(event) {
+  const word = event.target.closest('.card').id;
+  const sound = new Audio(CARDS.find((el) => el.word === word).audio);
+  sound.play();
 }
 
 function rotateCard() {
   console.log('Rotate!');
 }
 
-function createWordCard(id, word, image) {
+function createWordCard(word, image, isPlayMode) {
   const card = createElement('div', ['card', styles.card]);
-  card.setAttribute('id', `card${id}`);
+  if (isPlayMode) {
+    card.classList.add('play');
+  }
+  card.setAttribute('id', word);
   addNewImageElement(card, 'div', styles['card-img'], image);
-  const div = createElement('div', styles['card-bottom']);
+  const div = createElement('div', styles['train-container']);
   const audio = createElement('div', styles.icon);
   audio.innerHTML = `${
     icon(faVolumeHigh, {
       styles: { color: '#f4f4f4' },
       transform: {
-        size: 24,
+        size: 20,
       },
     }).html
   }`;
@@ -45,7 +52,7 @@ function createWordCard(id, word, image) {
     icon(faArrowsRotate, {
       styles: { color: '#f4f4f4' },
       transform: {
-        size: 24,
+        size: 20,
       },
     }).html
   }`;
@@ -80,8 +87,10 @@ export default function createCategorySection(event) {
     CATEGORIES.find((el) => el.id === categoryId).name,
   );
   const container = createElement('div', styles['card-container']);
+  const isPlayMode = document.getElementsByClassName(headerStyles.input)[0]
+    .checked;
   CARDS.filter((el) => el.categoryId === categoryId).forEach((el) =>
-    container.appendChild(createWordCard(el.id, el.word, el.image)),
+    container.appendChild(createWordCard(el.word, el.image, isPlayMode)),
   );
   categorySection.appendChild(container);
   const main = document.getElementsByClassName('main')[0];

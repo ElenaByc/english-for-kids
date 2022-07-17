@@ -16,7 +16,6 @@
       border: 3px solid $light-color;
       border-radius: 11px;
       box-shadow: $box-shadow;
-      cursor: pointer;
       transition: all 0.3s ease-out;
       display: flex;
       flex-direction: column;
@@ -32,7 +31,7 @@
         border-radius: 9px;
       }
 
-      .card-bottom {
+      .train-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -41,6 +40,10 @@
       }
 
       .icon {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
         &:hover {
           filter: invert(20%) sepia(63%) saturate(4798%) hue-rotate(301deg)
             brightness(75%) contrast(94%);
@@ -53,16 +56,7 @@
         line-height: 36px;
         color: $light-color;
         text-transform: uppercase;
-        transition: all 0.2 ease-in;
-      }
-
-      &:hover {
-        border: 3px solid $magenta-color;
-        .card-title {
-          color: $magenta-color;
-          text-shadow: -1px -1px 0 $light-color, 1px -1px 0 $light-color,
-            -1px 1px 0 $light-color, 1px 1px 0 $light-color;
-        }
+        transition: all 0.2s ease-in;
       }
     }
   }
