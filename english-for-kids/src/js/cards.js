@@ -25,6 +25,15 @@ import plum from 'Images/3/plum.jpg';
 import orangeFruit from 'Images/3/orangeFruit.jpg';
 import kiwi from 'Images/3/kiwi.jpg';
 
+import bear from 'Images/4/bear.jpg';
+import giraffe from 'Images/4/giraffe.jpg';
+import rabbit from 'Images/4/rabbit.jpg';
+import lion from 'Images/4/lion.jpg';
+import mouse from 'Images/4/mouse.jpg';
+import horse from 'Images/4/horse.jpg';
+import pig from 'Images/4/pig.jpg';
+import dog from 'Images/4/dog.jpg';
+
 import zero from 'Images/7/zero.jpg';
 import one from 'Images/7/one.jpg';
 import two from 'Images/7/two.jpg';
@@ -61,6 +70,15 @@ import grapeAudio from 'Audio/3/grape.mp3';
 import pearAudio from 'Audio/3/pear.mp3';
 import plumAudio from 'Audio/3/plum.mp3';
 import kiwiAudio from 'Audio/3/kiwi.mp3';
+
+import bearAudio from 'Audio/4/bear.mp3';
+import giraffeAudio from 'Audio/4/giraffe.mp3';
+import rabbitAudio from 'Audio/4/rabbit.mp3';
+import lionAudio from 'Audio/4/lion.mp3';
+import mouseAudio from 'Audio/4/mouse.mp3';
+import horseAudio from 'Audio/4/horse.mp3';
+import pigAudio from 'Audio/4/pig.mp3';
+import dogAudio from 'Audio/4/dog.mp3';
 
 import zeroAudio from 'Audio/7/zero.mp3';
 import oneAudio from 'Audio/7/one.mp3';
@@ -313,101 +331,62 @@ const cards = [
     audio: nineAudio,
   },
   {
-    word: 'cat',
-    translation: 'кот',
-    image: 'img/cat.jpg',
-    audioSrc: 'audio/cat.mp3',
+    categoryId: 4,
+    word: 'bear',
+    translation: 'медведь',
+    image: bear,
+    audio: bearAudio,
   },
   {
-    word: 'chick',
-    translation: 'цыплёнок',
-    image: 'img/chick.jpg',
-    audioSrc: 'audio/chick.mp3',
-  },
-  {
-    word: 'chicken',
-    translation: 'курица',
-    image: 'img/chicken.jpg',
-    audioSrc: 'audio/chicken.mp3',
-  },
-  {
-    word: 'dog',
-    translation: 'собака',
-    image: 'img/dog.jpg',
-    audioSrc: 'audio/dog.mp3',
-  },
-  {
-    word: 'horse',
-    translation: 'лошадь',
-    image: 'img/horse.jpg',
-    audioSrc: 'audio/horse.mp3',
-  },
-  {
-    word: 'pig',
-    translation: 'свинья',
-    image: 'img/pig.jpg',
-    audioSrc: 'audio/pig.mp3',
-  },
-  {
+    categoryId: 4,
     word: 'rabbit',
     translation: 'кролик',
-    image: 'img/rabbit.jpg',
-    audioSrc: 'audio/rabbit.mp3',
+    image: rabbit,
+    audio: rabbitAudio,
   },
   {
-    word: 'sheep',
-    translation: 'овца',
-    image: 'img/sheep.jpg',
-    audioSrc: 'audio/sheep.mp3',
-  },
-  {
-    word: 'bird',
-    translation: 'птица',
-    image: 'img/bird.jpg',
-    audioSrc: 'audio/bird.mp3',
-  },
-  {
-    word: 'fish',
-    translation: 'рыба',
-    image: 'img/fish1.jpg',
-    audioSrc: 'audio/fish.mp3',
-  },
-  {
-    word: 'frog',
-    translation: 'жаба',
-    image: 'img/frog.jpg',
-    audioSrc: 'audio/frog.mp3',
-  },
-  {
+    categoryId: 4,
     word: 'giraffe',
-    translation: 'жирафа',
-    image: 'img/giraffe.jpg',
-    audioSrc: 'audio/giraffe.mp3',
+    translation: 'жираф',
+    image: giraffe,
+    audio: giraffeAudio,
   },
   {
+    categoryId: 4,
     word: 'lion',
     translation: 'лев',
-    image: 'img/lion.jpg',
-    audioSrc: 'audio/lion.mp3',
+    image: lion,
+    audio: lionAudio,
   },
   {
+    categoryId: 4,
     word: 'mouse',
     translation: 'мышь',
-    image: 'img/mouse.jpg',
-    audioSrc: 'audio/mouse.mp3',
+    image: mouse,
+    audio: mouseAudio,
   },
   {
-    word: 'turtle',
-    translation: 'черепаха',
-    image: 'img/turtle.jpg',
-    audioSrc: 'audio/turtle.mp3',
+    categoryId: 4,
+    word: 'horse',
+    translation: 'лошадь',
+    image: horse,
+    audio: horseAudio,
   },
   {
-    word: 'dolphin',
-    translation: 'дельфин',
-    image: 'img/dolphin.jpg',
-    audioSrc: 'audio/dolphin.mp3',
+    categoryId: 4,
+    word: 'pig',
+    translation: 'свинья',
+    image: pig,
+    audio: pigAudio,
   },
+  {
+    categoryId: 4,
+    word: 'dog',
+    translation: 'собака',
+    image: dog,
+    audio: dogAudio,
+  },
+
   {
     word: 'skirt',
     translation: 'юбка',
