@@ -5,6 +5,7 @@ import mainStyles from 'Styles/main-page.module';
 import {
   faVolumeHigh,
   faArrowsRotate,
+  faCirclePlay,
 } from '@fortawesome/free-solid-svg-icons';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 
@@ -107,6 +108,22 @@ export default function createCategorySection(event) {
     ),
   );
   categorySection.appendChild(container);
+  const btn = createElement(
+    'button',
+    styles.btn,
+    `${
+      icon(faCirclePlay, {
+        styles: { color: '#f4f4f4' },
+        transform: {
+          size: 30,
+        },
+      }).html
+    }&nbsp;&nbsp;&nbsp;Start&nbsp;Game`,
+  );
+  if (isPlayMode) {
+    btn.classList.add('play');
+  }
+  categorySection.appendChild(btn);
   const main = document.getElementsByClassName('main')[0];
   main.appendChild(categorySection);
 }

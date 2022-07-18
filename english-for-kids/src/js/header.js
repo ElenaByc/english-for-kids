@@ -10,10 +10,12 @@ function createrSwitcher(appState) {
   input.setAttribute('type', 'checkbox');
   input.addEventListener('change', () => {
     const cards = document.getElementsByClassName('card');
+    const startBtn = document.getElementsByTagName('button')[0];
     const header = document.getElementsByClassName(styles.header)[0];
     document.body.classList.toggle('play');
     Array.from(cards).forEach((card) => card.classList.toggle('play'));
     header.classList.toggle(styles.play);
+    startBtn.classList.toggle('play');
     appState.togglePlay();
   });
   switcher.append(input);
