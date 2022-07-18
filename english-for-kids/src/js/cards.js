@@ -1,13 +1,20 @@
-import draw from 'Images/draw.jpg';
-import drawAudio from 'Audio/draw.mp3';
-import play from 'Images/play.jpg';
-import playAudio from 'Audio/play.mp3';
-import run from 'Images/run.jpg';
-import runAudio from 'Audio/run.mp3';
-import sing from 'Images/sing.jpg';
-import singAudio from 'Audio/sing.mp3';
-import swim from 'Images/swim.jpg';
-import swimAudio from 'Audio/swim.mp3';
+import draw from 'Images/2/draw.jpg';
+import play from 'Images/2/play.jpg';
+import run from 'Images/2/run.jpg';
+import sing from 'Images/2/sing.jpg';
+import swim from 'Images/2/swim.jpg';
+import read from 'Images/2/read.jpg';
+import sleep from 'Images/2/sleep.jpg';
+import dance from 'Images/2/dance.jpg';
+
+import drawAudio from 'Audio/2/draw.mp3';
+import playAudio from 'Audio/2/play.mp3';
+import runAudio from 'Audio/2/run.mp3';
+import singAudio from 'Audio/2/sing.mp3';
+import swimAudio from 'Audio/2/swim.mp3';
+import readAudio from 'Audio/2/read.mp3';
+import sleepAudio from 'Audio/2/sleep.mp3';
+import danceAudio from 'Audio/2/dance.mp3';
 
 const cards = [
   {
@@ -49,22 +56,22 @@ const cards = [
     categoryId: 2,
     word: 'read',
     translation: 'читать',
-    image: sing,
-    audio: singAudio,
+    image: read,
+    audio: readAudio,
   },
   {
     categoryId: 2,
     word: 'sleep',
     translation: 'спать',
-    image: sing,
-    audio: singAudio,
+    image: sleep,
+    audio: sleepAudio,
   },
   {
     categoryId: 2,
     word: 'dance',
     translation: 'танцевать',
-    image: sing,
-    audio: singAudio,
+    image: dance,
+    audio: danceAudio,
   },
   {
     word: 'cat',
