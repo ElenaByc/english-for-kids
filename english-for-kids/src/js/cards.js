@@ -1,3 +1,12 @@
+import red from 'Images/1/red.jpg';
+import blue from 'Images/1/blue.jpg';
+import green from 'Images/1/green.jpg';
+import yellow from 'Images/1/yellow.jpg';
+import orange from 'Images/1/orange.jpg';
+import pink from 'Images/1/pink.jpg';
+import purple from 'Images/1/purple.jpg';
+import black from 'Images/1/black.jpg';
+
 import draw from 'Images/2/draw.jpg';
 import play from 'Images/2/play.jpg';
 import run from 'Images/2/run.jpg';
@@ -16,7 +25,72 @@ import readAudio from 'Audio/2/read.mp3';
 import sleepAudio from 'Audio/2/sleep.mp3';
 import danceAudio from 'Audio/2/dance.mp3';
 
+import redAudio from 'Audio/1/red.mp3';
+import blueAudio from 'Audio/1/blue.mp3';
+import greenAudio from 'Audio/1/green.mp3';
+import yellowAudio from 'Audio/1/yellow.mp3';
+import orangeAudio from 'Audio/1/orange.mp3';
+import pinkAudio from 'Audio/1/pink.mp3';
+import purpleAudio from 'Audio/1/purple.mp3';
+import blackAudio from 'Audio/1/black.mp3';
+
 const cards = [
+  {
+    categoryId: 1,
+    word: 'red',
+    translation: 'красный',
+    image: red,
+    audio: redAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'blue',
+    translation: 'синий',
+    image: blue,
+    audio: blueAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'green',
+    translation: 'зеленый',
+    image: green,
+    audio: greenAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'yellow',
+    translation: 'желтый',
+    image: yellow,
+    audio: yellowAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'orange',
+    translation: 'оранжевый',
+    image: orange,
+    audio: orangeAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'pink',
+    translation: 'розовый',
+    image: pink,
+    audio: pinkAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'purple',
+    translation: 'фиолетовый',
+    image: purple,
+    audio: purpleAudio,
+  },
+  {
+    categoryId: 1,
+    word: 'black',
+    translation: 'черный',
+    image: black,
+    audio: blackAudio,
+  },
   {
     categoryId: 2,
     word: 'run',
