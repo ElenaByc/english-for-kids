@@ -16,6 +16,15 @@ import read from 'Images/2/read.jpg';
 import sleep from 'Images/2/sleep.jpg';
 import dance from 'Images/2/dance.jpg';
 
+import apple from 'Images/3/apple.jpg';
+import banana from 'Images/3/banana.jpg';
+import cherry from 'Images/3/cherry.jpg';
+import grape from 'Images/3/grape.jpg';
+import pear from 'Images/3/pear.jpg';
+import plum from 'Images/3/plum.jpg';
+import orangeFruit from 'Images/3/orangeFruit.jpg';
+import kiwi from 'Images/3/kiwi.jpg';
+
 import zero from 'Images/7/zero.jpg';
 import one from 'Images/7/one.jpg';
 import two from 'Images/7/two.jpg';
@@ -44,6 +53,14 @@ import orangeAudio from 'Audio/1/orange.mp3';
 import pinkAudio from 'Audio/1/pink.mp3';
 import purpleAudio from 'Audio/1/purple.mp3';
 import blackAudio from 'Audio/1/black.mp3';
+
+import appleAudio from 'Audio/3/apple.mp3';
+import bananaAudio from 'Audio/3/banana.mp3';
+import cherryAudio from 'Audio/3/cherry.mp3';
+import grapeAudio from 'Audio/3/grape.mp3';
+import pearAudio from 'Audio/3/pear.mp3';
+import plumAudio from 'Audio/3/plum.mp3';
+import kiwiAudio from 'Audio/3/kiwi.mp3';
 
 import zeroAudio from 'Audio/7/zero.mp3';
 import oneAudio from 'Audio/7/one.mp3';
@@ -168,6 +185,62 @@ const cards = [
     translation: 'танцевать',
     image: dance,
     audio: danceAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'apple',
+    translation: 'яблоко',
+    image: apple,
+    audio: appleAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'banana',
+    translation: 'банан',
+    image: banana,
+    audio: bananaAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'cherry',
+    translation: 'черешня',
+    image: cherry,
+    audio: cherryAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'grape',
+    translation: 'виноград',
+    image: grape,
+    audio: grapeAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'pear',
+    translation: 'груша',
+    image: pear,
+    audio: pearAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'plum',
+    translation: 'слива',
+    image: plum,
+    audio: plumAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'orange',
+    translation: 'апельсин',
+    image: orangeFruit,
+    audio: orangeAudio,
+  },
+  {
+    categoryId: 3,
+    word: 'kiwi',
+    translation: 'киви',
+    image: kiwi,
+    audio: kiwiAudio,
   },
   {
     categoryId: 7,
