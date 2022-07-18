@@ -16,6 +16,17 @@ import read from 'Images/2/read.jpg';
 import sleep from 'Images/2/sleep.jpg';
 import dance from 'Images/2/dance.jpg';
 
+import zero from 'Images/7/zero.jpg';
+import one from 'Images/7/one.jpg';
+import two from 'Images/7/two.jpg';
+import three from 'Images/7/three.jpg';
+import four from 'Images/7/four.jpg';
+import five from 'Images/7/five.jpg';
+import six from 'Images/7/six.jpg';
+import seven from 'Images/7/seven.jpg';
+import eight from 'Images/7/eight.jpg';
+import nine from 'Images/7/nine.jpg';
+
 import drawAudio from 'Audio/2/draw.mp3';
 import playAudio from 'Audio/2/play.mp3';
 import runAudio from 'Audio/2/run.mp3';
@@ -33,6 +44,17 @@ import orangeAudio from 'Audio/1/orange.mp3';
 import pinkAudio from 'Audio/1/pink.mp3';
 import purpleAudio from 'Audio/1/purple.mp3';
 import blackAudio from 'Audio/1/black.mp3';
+
+import zeroAudio from 'Audio/7/zero.mp3';
+import oneAudio from 'Audio/7/one.mp3';
+import twoAudio from 'Audio/7/two.mp3';
+import threeAudio from 'Audio/7/three.mp3';
+import fourAudio from 'Audio/7/four.mp3';
+import fiveAudio from 'Audio/7/five.mp3';
+import sixAudio from 'Audio/7/six.mp3';
+import sevenAudio from 'Audio/7/seven.mp3';
+import eightAudio from 'Audio/7/eight.mp3';
+import nineAudio from 'Audio/7/nine.mp3';
 
 const cards = [
   {
@@ -146,6 +168,76 @@ const cards = [
     translation: 'танцевать',
     image: dance,
     audio: danceAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'zero',
+    translation: 'ноль',
+    image: zero,
+    audio: zeroAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'one',
+    translation: 'один',
+    image: one,
+    audio: oneAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'two',
+    translation: 'два',
+    image: two,
+    audio: twoAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'three',
+    translation: 'три',
+    image: three,
+    audio: threeAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'four',
+    translation: 'четыре',
+    image: four,
+    audio: fourAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'five',
+    translation: 'пять',
+    image: five,
+    audio: fiveAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'six',
+    translation: 'шесть',
+    image: six,
+    audio: sixAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'seven',
+    translation: 'семь',
+    image: seven,
+    audio: sevenAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'eight',
+    translation: 'восемь',
+    image: eight,
+    audio: eightAudio,
+  },
+  {
+    categoryId: 7,
+    word: 'nine',
+    translation: 'девять',
+    image: nine,
+    audio: nineAudio,
   },
   {
     word: 'cat',
