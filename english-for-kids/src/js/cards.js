@@ -107,6 +107,24 @@ import horseAudio from 'Audio/4/horse.mp3';
 import pigAudio from 'Audio/4/pig.mp3';
 import dogAudio from 'Audio/4/dog.mp3';
 
+import happyAudio from 'Audio/5/happy.mp3';
+import sadAudio from 'Audio/5/sad.mp3';
+import scaredAudio from 'Audio/5/scared.mp3';
+import angryAudio from 'Audio/5/angry.mp3';
+import disgustAudio from 'Audio/5/disgust.mp3';
+import tiredAudio from 'Audio/5/tired.mp3';
+import cryAudio from 'Audio/5/cry.mp3';
+import laughAudio from 'Audio/5/laugh.mp3';
+
+import capAudio from 'Audio/6/cap.mp3';
+import skirtAudio from 'Audio/6/skirt.mp3';
+import shortsAudio from 'Audio/6/shorts.mp3';
+import shoesAudio from 'Audio/6/shoes.mp3';
+import beltAudio from 'Audio/6/belt.mp3';
+import shirtAudio from 'Audio/6/shirt.mp3';
+import socksAudio from 'Audio/6/socks.mp3';
+import glassesAudio from 'Audio/6/glasses.mp3';
+
 import zeroAudio from 'Audio/7/zero.mp3';
 import oneAudio from 'Audio/7/one.mp3';
 import twoAudio from 'Audio/7/two.mp3';
@@ -117,6 +135,15 @@ import sixAudio from 'Audio/7/six.mp3';
 import sevenAudio from 'Audio/7/seven.mp3';
 import eightAudio from 'Audio/7/eight.mp3';
 import nineAudio from 'Audio/7/nine.mp3';
+
+import snowAudio from 'Audio/8/snow.mp3';
+import rainAudio from 'Audio/8/rain.mp3';
+import sunAudio from 'Audio/8/sun.mp3';
+import thunderAudio from 'Audio/8/thunder.mp3';
+import rainbowAudio from 'Audio/8/rainbow.mp3';
+import cloudAudio from 'Audio/8/cloud.mp3';
+import tornadoAudio from 'Audio/8/tornado.mp3';
+import windAudio from 'Audio/8/wind.mp3';
 
 const cards = [
   {
@@ -348,112 +375,112 @@ const cards = [
     word: 'happy',
     translation: 'счастливый',
     image: happy,
-    audio: bearAudio,
+    audio: happyAudio,
   },
   {
     categoryId: 5,
     word: 'sad',
     translation: 'грустный',
     image: sad,
-    audio: rabbitAudio,
+    audio: sadAudio,
   },
   {
     categoryId: 5,
     word: 'tired',
     translation: 'уставший',
     image: tired,
-    audio: lionAudio,
+    audio: tiredAudio,
   },
   {
     categoryId: 5,
     word: 'scared',
     translation: 'испуганный',
     image: scared,
-    audio: giraffeAudio,
+    audio: scaredAudio,
   },
   {
     categoryId: 5,
     word: 'angry',
     translation: 'сердитый',
     image: angry,
-    audio: mouseAudio,
+    audio: angryAudio,
   },
   {
     categoryId: 5,
     word: 'disgust',
     translation: 'отвращение',
     image: disgust,
-    audio: horseAudio,
+    audio: disgustAudio,
   },
   {
     categoryId: 5,
     word: 'laugh',
     translation: 'смех',
     image: laugh,
-    audio: pigAudio,
+    audio: laughAudio,
   },
   {
     categoryId: 5,
     word: 'cry',
     translation: 'плач',
     image: cry,
-    audio: dogAudio,
+    audio: cryAudio,
   },
   {
     categoryId: 6,
     word: 'skirt',
     translation: 'юбка',
     image: skirt,
-    audio: dogAudio,
+    audio: skirtAudio,
   },
   {
     categoryId: 6,
     word: 'shorts',
     translation: 'шорты',
     image: shorts,
-    audio: dogAudio,
+    audio: shortsAudio,
   },
   {
     categoryId: 6,
     word: 'shoes',
     translation: 'обувь',
     image: shoes,
-    audio: dogAudio,
+    audio: shoesAudio,
   },
   {
     categoryId: 6,
     word: 'cap',
     translation: 'кепка',
     image: cap,
-    audio: dogAudio,
+    audio: capAudio,
   },
   {
     categoryId: 6,
     word: 'belt',
     translation: 'ремень',
     image: belt,
-    audio: dogAudio,
+    audio: beltAudio,
   },
   {
     categoryId: 6,
     word: 'shirt',
     translation: 'рубашка',
     image: shirt,
-    audio: dogAudio,
+    audio: shirtAudio,
   },
   {
     categoryId: 6,
     word: 'socks',
     translation: 'носки',
     image: socks,
-    audio: dogAudio,
+    audio: socksAudio,
   },
   {
     categoryId: 6,
     word: 'glasses',
     translation: 'очки',
     image: glasses,
-    audio: dogAudio,
+    audio: glassesAudio,
   },
   {
     categoryId: 7,
@@ -530,56 +557,56 @@ const cards = [
     word: 'snow',
     translation: 'снег',
     image: snow,
-    audio: oneAudio,
+    audio: snowAudio,
   },
   {
     categoryId: 8,
     word: 'rain',
     translation: 'дождь',
     image: rain,
-    audio: twoAudio,
+    audio: rainAudio,
   },
   {
     categoryId: 8,
     word: 'sun',
     translation: 'солнце',
     image: sun,
-    audio: threeAudio,
+    audio: sunAudio,
   },
   {
     categoryId: 8,
     word: 'thunder',
     translation: 'гроза',
     image: thunder,
-    audio: fourAudio,
+    audio: thunderAudio,
   },
   {
     categoryId: 8,
     word: 'rainbow',
     translation: 'радуга',
     image: rainbow,
-    audio: fiveAudio,
+    audio: rainbowAudio,
   },
   {
     categoryId: 8,
     word: 'cloud',
     translation: 'облако',
     image: cloud,
-    audio: sixAudio,
+    audio: cloudAudio,
   },
   {
     categoryId: 8,
     word: 'tornado',
     translation: 'торнадо',
     image: tornado,
-    audio: sevenAudio,
+    audio: tornadoAudio,
   },
   {
     categoryId: 8,
     word: 'wind',
     translation: 'ветер',
     image: wind,
-    audio: eightAudio,
+    audio: windAudio,
   },
 ];
 
