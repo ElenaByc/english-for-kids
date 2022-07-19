@@ -35,6 +35,22 @@ import pig from 'Images/4/pig.jpg';
 import dog from 'Images/4/dog.jpg';
 
 import happy from 'Images/5/happy.jpg';
+import sad from 'Images/5/sad.jpg';
+import scared from 'Images/5/scared.jpg';
+import angry from 'Images/5/angry.jpg';
+import disgust from 'Images/5/disgust.jpg';
+import tired from 'Images/5/tired.jpg';
+import cry from 'Images/5/cry.jpg';
+import laugh from 'Images/5/laugh.jpg';
+
+import cap from 'Images/6/cap.jpg';
+import skirt from 'Images/6/skirt.jpg';
+import shorts from 'Images/6/shorts.jpg';
+import shoes from 'Images/6/shoes.jpg';
+import belt from 'Images/6/belt.jpg';
+import shirt from 'Images/6/shirt.jpg';
+import socks from 'Images/6/socks.jpg';
+import glasses from 'Images/6/sunglasses.jpg';
 
 import zero from 'Images/7/zero.jpg';
 import one from 'Images/7/one.jpg';
@@ -46,6 +62,15 @@ import six from 'Images/7/six.jpg';
 import seven from 'Images/7/seven.jpg';
 import eight from 'Images/7/eight.jpg';
 import nine from 'Images/7/nine.jpg';
+
+import snow from 'Images/8/snow.jpg';
+import rain from 'Images/8/rain.jpg';
+import sun from 'Images/8/sun.jpg';
+import thunder from 'Images/8/thunder.jpg';
+import rainbow from 'Images/8/rainbow.jpg';
+import cloud from 'Images/8/cloud.jpg';
+import tornado from 'Images/8/tornado.jpg';
+import wind from 'Images/8/wind.jpg';
 
 import drawAudio from 'Audio/2/draw.mp3';
 import playAudio from 'Audio/2/play.mp3';
@@ -263,6 +288,174 @@ const cards = [
     audio: kiwiAudio,
   },
   {
+    categoryId: 4,
+    word: 'bear',
+    translation: 'медведь',
+    image: bear,
+    audio: bearAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'rabbit',
+    translation: 'кролик',
+    image: rabbit,
+    audio: rabbitAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'giraffe',
+    translation: 'жираф',
+    image: giraffe,
+    audio: giraffeAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'lion',
+    translation: 'лев',
+    image: lion,
+    audio: lionAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'mouse',
+    translation: 'мышь',
+    image: mouse,
+    audio: mouseAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'horse',
+    translation: 'лошадь',
+    image: horse,
+    audio: horseAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'pig',
+    translation: 'свинья',
+    image: pig,
+    audio: pigAudio,
+  },
+  {
+    categoryId: 4,
+    word: 'dog',
+    translation: 'собака',
+    image: dog,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'happy',
+    translation: 'счастливый',
+    image: happy,
+    audio: bearAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'sad',
+    translation: 'грустный',
+    image: sad,
+    audio: rabbitAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'tired',
+    translation: 'уставший',
+    image: tired,
+    audio: lionAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'scared',
+    translation: 'испуганный',
+    image: scared,
+    audio: giraffeAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'angry',
+    translation: 'сердитый',
+    image: angry,
+    audio: mouseAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'disgust',
+    translation: 'отвращение',
+    image: disgust,
+    audio: horseAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'laugh',
+    translation: 'смех',
+    image: laugh,
+    audio: pigAudio,
+  },
+  {
+    categoryId: 5,
+    word: 'cry',
+    translation: 'плач',
+    image: cry,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'skirt',
+    translation: 'юбка',
+    image: skirt,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'shorts',
+    translation: 'шорты',
+    image: shorts,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'shoes',
+    translation: 'обувь',
+    image: shoes,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'cap',
+    translation: 'кепка',
+    image: cap,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'belt',
+    translation: 'ремень',
+    image: belt,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'shirt',
+    translation: 'рубашка',
+    image: shirt,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'socks',
+    translation: 'носки',
+    image: socks,
+    audio: dogAudio,
+  },
+  {
+    categoryId: 6,
+    word: 'glasses',
+    translation: 'очки',
+    image: glasses,
+    audio: dogAudio,
+  },
+  {
     categoryId: 7,
     word: 'zero',
     translation: 'ноль',
@@ -333,138 +526,60 @@ const cards = [
     audio: nineAudio,
   },
   {
-    categoryId: 4,
-    word: 'bear',
-    translation: 'медведь',
-    image: bear,
-    audio: bearAudio,
+    categoryId: 8,
+    word: 'snow',
+    translation: 'снег',
+    image: snow,
+    audio: oneAudio,
   },
   {
-    categoryId: 4,
-    word: 'rabbit',
-    translation: 'кролик',
-    image: rabbit,
-    audio: rabbitAudio,
+    categoryId: 8,
+    word: 'rain',
+    translation: 'дождь',
+    image: rain,
+    audio: twoAudio,
   },
   {
-    categoryId: 4,
-    word: 'giraffe',
-    translation: 'жираф',
-    image: giraffe,
-    audio: giraffeAudio,
+    categoryId: 8,
+    word: 'sun',
+    translation: 'солнце',
+    image: sun,
+    audio: threeAudio,
   },
   {
-    categoryId: 4,
-    word: 'lion',
-    translation: 'лев',
-    image: lion,
-    audio: lionAudio,
+    categoryId: 8,
+    word: 'thunder',
+    translation: 'гроза',
+    image: thunder,
+    audio: fourAudio,
   },
   {
-    categoryId: 4,
-    word: 'mouse',
-    translation: 'мышь',
-    image: mouse,
-    audio: mouseAudio,
+    categoryId: 8,
+    word: 'rainbow',
+    translation: 'радуга',
+    image: rainbow,
+    audio: fiveAudio,
   },
   {
-    categoryId: 4,
-    word: 'horse',
-    translation: 'лошадь',
-    image: horse,
-    audio: horseAudio,
+    categoryId: 8,
+    word: 'cloud',
+    translation: 'облако',
+    image: cloud,
+    audio: sixAudio,
   },
   {
-    categoryId: 4,
-    word: 'pig',
-    translation: 'свинья',
-    image: pig,
-    audio: pigAudio,
+    categoryId: 8,
+    word: 'tornado',
+    translation: 'торнадо',
+    image: tornado,
+    audio: sevenAudio,
   },
   {
-    categoryId: 4,
-    word: 'dog',
-    translation: 'собака',
-    image: dog,
-    audio: dogAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'happy',
-    translation: 'счастливый',
-    image: happy,
-    audio: bearAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'sad',
-    translation: 'грустный',
-    image: happy,
-    audio: rabbitAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'tired',
-    translation: 'уставший',
-    image: happy,
-    audio: lionAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'scared',
-    translation: 'испуганный',
-    image: happy,
-    audio: giraffeAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'angry',
-    translation: 'сердитый',
-    image: happy,
-    audio: mouseAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'disgust',
-    translation: 'отвращение',
-    image: happy,
-    audio: horseAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'laugh',
-    translation: 'смех',
-    image: happy,
-    audio: pigAudio,
-  },
-  {
-    categoryId: 5,
-    word: 'cry',
-    translation: 'собака',
-    image: happy,
-    audio: dogAudio,
-  },
-
-  {
-    categoryId: 6,
-    word: 'skirt',
-    translation: 'юбка',
-    image: happy,
-    audio: dogAudio,
-  },
-  {
-    categoryId: 6,
-    word: 'pants',
-    translation: 'брюки',
-    image: happy,
-    audio: dogAudio,
-  },
-  {
-    categoryId: 6,
-    word: 'shoe',
-    translation: 'туфли',
-    image: happy,
-    audio: dogAudio,
+    categoryId: 8,
+    word: 'wind',
+    translation: 'ветер',
+    image: wind,
+    audio: eightAudio,
   },
 ];
 
