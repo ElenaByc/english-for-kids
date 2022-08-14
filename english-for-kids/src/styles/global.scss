@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import './variables';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../assets/images/wave-top.png'),
+    url('../assets/images/wave-bottom.png'),
+    linear-gradient(
+      $blue-color,
+      $white-color 28vw,
+      $white-color calc(100% - 28vw),
+      $blue-color
+    );
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 80px, center bottom;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+
+  &.play {
+    background: url('../assets/images/wave-top.png'),
+      url('../assets/images/wave-bottom.png'),
+      linear-gradient(
+        $green-color,
+        $white-color 28vw,
+        $white-color calc(100% - 28vw),
+        $green-color
+      );
+    background-size: 100% auto, 100% auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 80px, center bottom;
+  }
+}
+
+#app-container {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 80px auto 0;
+
+  h1,
+  h2 {
+    font-family: 'Architects Daughter', cursive;
+    margin: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    transition: all 0.5s ease-in;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.main {
+  .section {
+    padding: 10px 7%;
+
+    h2 {
+      color: $magenta-color;
+      text-shadow: -1px -1px 0 $light-color, 1px -1px 0 $light-color,
+        -1px 1px 0 $light-color, 1px 1px 0 $light-color;
+    }
+
+    .card {
+      background-color: $blue-color;
+      &.play {
+        background-color: $green-color;
+        div div:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+
+    button.play {
+      display: block;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  body {
+    font-size: 14px;
+
+    #app-container {
+      margin-top: 110px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  body {
+    font-size: 12px;
+  }
+}
